@@ -24,6 +24,12 @@
     <script src="./lib/watermark.min.js"></script>
     <script> 
       watermark.init();
+      setTimeout(() => {
+        watermark.clear()
+      }, 3000);
+      setTimeout(() => {
+        watermark.show()
+      }, 6000);
     </script>
   </body>
 </html>

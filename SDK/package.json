@@ -1,8 +1,8 @@
 {
   "name": "watermark-h5",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "一款适用于web页面的水印SDK Add watermark on Web page",
-  "main": "./SDK/lib/watermark-h5/index.js",
+  "main": "lib/esm/index.js",
   "scripts": {
     "build": "PACKAGETYPE=ems rollup -c",
     "buildEsm": "PACKAGETYPE=ems rollup -c",

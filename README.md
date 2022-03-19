@@ -5,10 +5,13 @@ Add watermark on Web page
 一款适用于web页面的水印SDK
 
 ## 特点
-* 简单易用
+* 简单易用，适用于多种项目框架
 * 可自定义水印文本，颜色，大小，以及位置
+* 监控 DOM 变化，实现水印不可删除
 * ...
 
+
+![avatar](./Demo/img/demo.gif)
 
 ## 使用
 
@@ -16,7 +19,7 @@ Add watermark on Web page
 
 #### 安装
 
-`npm install watermark-h5`
+`npm install watermark-h5 --save-d`
 
 #### 使用
 
@@ -36,7 +39,7 @@ Add watermark on Web page
 
 #### 安装
 
-`npm install watermark-h5`
+`npm install watermark-h5 --save`
 
 #### 使用
 
@@ -76,3 +79,21 @@ defaultConfig = {
     zIndex: 9999
 }
 ```
+
+#### 4. 删除水印
+
+`watermark.clear()`
+
+
+#### 5. 展示水印
+
+`watermark.show()`
+
+
+### vue3 + vite + ts 项目中使用
+
+可能会有报错：`Could not find a declaration file for module 'watermark-h5'. `
+
+需要声明一下类型:
+
+![avatar](./Demo/img/vue3%2Bvite%2Bts.png)
