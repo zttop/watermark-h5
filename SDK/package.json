@@ -1,0 +1,34 @@
+{
+  "name": "watermark-h5",
+  "version": "1.0.0",
+  "description": "一款适用于web页面的水印SDK Add watermark on Web page",
+  "main": "./SDK/lib/watermark-h5/index.js",
+  "scripts": {
+    "build": "PACKAGETYPE=ems rollup -c",
+    "buildEsm": "PACKAGETYPE=ems rollup -c",
+    "buildUmd": "PACKAGETYPE=umd rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "watermark"
+  ],
+  "author": "zttop <3224858263@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zttop/watermark-h5.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "rollup": "^2.63.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

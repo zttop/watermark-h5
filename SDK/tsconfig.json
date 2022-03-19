@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ES2015", // 指定生成哪个模块系统代码
+    "outDir": "./lib/", // 输出目录
+    "allowJs": true, // 允许编译javascript文件。
+    "lib": [ // 编译过程中需要引入的库文件的列表
+      "es5",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+}
