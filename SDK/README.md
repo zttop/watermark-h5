@@ -10,7 +10,7 @@ Add watermark on Web page
 * ...
 
 
-![avatar](./Demo/img/demo.gif)
+![avatar](../Demo/img/demo.gif)
 
 ## 使用
 
@@ -95,4 +95,4 @@ defaultConfig = {
 
 需要声明一下类型:
 
-![avatar](./Demo/img/vue3%2Bvite%2Bts.png)
+![avatar](../Demo/img/vue3%2Bvite%2Bts.png)

@@ -14,10 +14,29 @@ class WaterMark {
 
   init(args: watermark) {
     this.config = { ...this.config, ...args }
-    console.log('-=-=-=-=-init🌹🌹🌹-=-=-=-', this.config)
-
     this._init();
+  }
 
+  clear() {
+    this.config.show = false
+    let __wm = null
+    if (this.container) {
+      __wm = document.querySelector('.__pwm')
+    } else {
+      __wm = document.querySelector('.__wm')
+    }
+    if (__wm) {
+      this.container.removeChild(__wm)
+    }
+    if (this.moServer) {
+      this.moServer.disconnect()
+      this.moServer = null
+    }
+  }
+
+  show() {
+    this.config.show = true
+    this._init()
   }
 
   _init() {
@@ -25,7 +44,9 @@ class WaterMark {
       return;
     } else {
       this._paint();
-      this._mutation();
+      if (!this.moServer) {
+        this._mutation()
+      }
     }
   }
 
