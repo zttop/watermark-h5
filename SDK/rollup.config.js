@@ -18,11 +18,11 @@ const esmPackage = {
   ],
   output: {
     // 必须 (如果要输出多个，可以是一个数组)
-    file: "lib/watermark-h5/index.js", // 出口文件，必须
+    file: "lib/esm/index.js", // 出口文件，必须
     format: "esm", // 必须
     banner: "/* watermark version 🌹" + version + " */",
     footer: "/* up up up */",
-    sourcemap: true,
+    sourcemap: false,
   },
 };
 const umdPackage = {
